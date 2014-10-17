@@ -16,6 +16,9 @@
   <script src="http://localhost/cordova.js"></script>
   <script src="/components/steroids-js/steroids.js"></script>
 
+  <script src="/components/angular/angular.min.js"></script>
+  <script src="/components/angular-route/angular-route.min.js"></script>
+  <script src="/javascripts/cooking.js"></script>
   <script src="/javascripts/application.js"></script>
 
   <script>
@@ -57,9 +60,10 @@
   </div>
   <div class="range">
     <i class="icon ion-volume-low"></i>
-    <input type="range" name="volume">
+    <input type="range" name="volume" data-ng-model="volume">
     <i class="icon ion-volume-high"></i>
   </div>
+  {{ volume }}
   <div class="list">
 
     <label class="item item-input item-select">
@@ -85,6 +89,5 @@
 
   </div>
   <img id="myImage" style="width:100%;height:100%"/>
-
 </body>
 </html>

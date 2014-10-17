@@ -4,7 +4,7 @@
 steroids.config.name = "praron"
 
 # ## Start Location
-steroids.config.location = "http://localhost/index.html"
+steroids.config.location = "http://localhost/tutorial.html"
 
 # ## Tab Bar
 # steroids.config.tabBar.enabled = true
