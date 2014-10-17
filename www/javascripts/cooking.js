@@ -1,22 +1,27 @@
 // checkout: http://mobileangularui.com/
 
-var app = angular.module('cooking', [
-  'ngRoute',
-  'mobile-angular-ui'
-]).config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/', {
-    controller:'MainController',
-    templateUrl:'main.html'
-  }).when('/custom', {
-    controller:'CustomController',
-    templateUrl:'custom.html'
-  }).when('/arduinos', {
-    controller:'ArduinosController',
-    templateUrl:'arduinos.html'
-  }).otherwise({
-    redirectTo:'/'
-  });
+var app = angular.module('cooking', [ ]);
+app.controller("BakingController", ['$scope', function($scope) {
+  $scope.volume = 5;
 }]);
+
+// var app = angular.module('cooking', [
+//   'ngRoute',
+//   'mobile-angular-ui'
+// ]).config(['$routeProvider', function($routeProvider) {
+//   $routeProvider.when('/', {
+//     controller:'MainController',
+//     templateUrl:'main.html'
+//   }).when('/custom', {
+//     controller:'CustomController',
+//     templateUrl:'custom.html'
+//   }).when('/arduinos', {
+//     controller:'ArduinosController',
+//     templateUrl:'arduinos.html'
+//   }).otherwise({
+//     redirectTo:'/'
+//   });
+// }]);
 
 
 

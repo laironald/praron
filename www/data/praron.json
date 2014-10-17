@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "First praron",
+    "description": "This is awesome."
+  },
+  {
+    "id": 2,
+    "name": "Second praron",
+    "description": "This is also okay."
+  }
+]
